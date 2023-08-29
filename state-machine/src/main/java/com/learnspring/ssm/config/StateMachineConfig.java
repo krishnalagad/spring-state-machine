@@ -15,7 +15,6 @@ import org.springframework.statemachine.config.builders.StateMachineTransitionCo
 import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.state.State;
 
-import javax.swing.*;
 import java.util.EnumSet;
 import java.util.Random;
 
@@ -29,9 +28,9 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
         states.withStates()
                 .initial(PaymentState.NEW)
                 .states(EnumSet.allOf(PaymentState.class))
-                .end(PaymentState.AUTH)
-                .end(PaymentState.PRE_AUTH_ERROR)
-                .end(PaymentState.AUTH_ERROR);
+                .end(PaymentState.AUTH)             // These lines define the end states of the state machine.
+                .end(PaymentState.PRE_AUTH_ERROR)   // Once the state machine reaches these states,
+                .end(PaymentState.AUTH_ERROR);      // it will not transition to any other states.
     }
 
     @Override
