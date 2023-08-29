@@ -36,7 +36,7 @@ public class PaymentServiceImpl implements PaymentService {
         StateMachine<PaymentState, PaymentEvent> sm = build(paymentId);
 
         sendEvent(paymentId, sm, PaymentEvent.PRE_AUTHORIZED);
-        return null;
+        return sm;
     }
 
     @Transactional
@@ -45,8 +45,8 @@ public class PaymentServiceImpl implements PaymentService {
 
         StateMachine<PaymentState, PaymentEvent> sm = build(paymentId);
 
-        sendEvent(paymentId, sm, PaymentEvent.AUTH_APPROVED);
-        return null;
+        sendEvent(paymentId, sm, PaymentEvent.AUTHORIZED);
+        return sm;
     }
 
     @Transactional
@@ -56,7 +56,7 @@ public class PaymentServiceImpl implements PaymentService {
         StateMachine<PaymentState, PaymentEvent> sm = build(paymentId);
 
         sendEvent(paymentId, sm, PaymentEvent.AUTH_DECLINED);
-        return null;
+        return sm;
     }
 
 //    ------------------------------------------------------------------------------------------------------------------

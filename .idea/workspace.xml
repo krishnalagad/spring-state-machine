@@ -59,7 +59,20 @@
       <recent name="com.learnspring.ssm.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentServiceImplTest.preAuth">
+  <component name="RunManager" selected="JUnit.PaymentServiceImplTest.testAuth">
+    <configuration name="StateMachineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learnspring.ssm.StateMachineApplication" />
+      <module name="state-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnspring.ssm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentServiceImplTest.preAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="state-machine" />
       <extension name="coverage">
@@ -71,6 +84,22 @@
       <option name="PACKAGE_NAME" value="com.learnspring.ssm.services.impl" />
       <option name="MAIN_CLASS_NAME" value="com.learnspring.ssm.services.impl.PaymentServiceImplTest" />
       <option name="METHOD_NAME" value="preAuth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceImplTest.testAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="state-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnspring.ssm.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.learnspring.ssm.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.learnspring.ssm.services.impl.PaymentServiceImplTest" />
+      <option name="METHOD_NAME" value="testAuth" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,6 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaymentServiceImplTest.testAuth" />
+        <item itemvalue="Application.StateMachineApplication" />
         <item itemvalue="JUnit.PaymentServiceImplTest.preAuth" />
         <item itemvalue="JUnit.StateMachineConfigTest.testNewStateMachine" />
       </list>
