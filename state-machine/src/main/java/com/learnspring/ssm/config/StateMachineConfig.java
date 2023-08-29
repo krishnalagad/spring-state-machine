@@ -68,8 +68,8 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
     public Action<PaymentState, PaymentEvent> preAuthAction() {
         return context -> {
             System.out.println("PreAuth was called");
-            if (new Random().nextInt(10) < 8) {
-                System.out.println("Pre Auth Approved");
+            if (new Random().nextInt(10) < 8) {     // This approach of decision-making is not good for real world
+                System.out.println("Pre Auth Approved");    //  solutions.
                 context.getStateMachine().sendEvent(MessageBuilder.withPayload(PaymentEvent.PRE_AUTH_APPROVED)
                         .setHeader(PaymentServiceImpl.PAYMENT_ID_HEADER, context.getMessageHeader(PaymentServiceImpl.PAYMENT_ID_HEADER))
                         .build());
