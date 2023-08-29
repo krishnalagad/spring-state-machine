@@ -20,7 +20,7 @@ public class Payment {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private PaymentState states;
+    private PaymentState state;
 
     private BigDecimal amount;
 }

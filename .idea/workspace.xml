@@ -14,9 +14,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,14 +48,34 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.learnspring.ssm.services.impl" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.learnspring.ssm.services.impl" />
       <recent name="com.learnspring.ssm.config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PaymentServiceImplTest.preAuth">
+    <configuration name="PaymentServiceImplTest.preAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="state-machine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learnspring.ssm.services.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.learnspring.ssm.services.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.learnspring.ssm.services.impl.PaymentServiceImplTest" />
+      <option name="METHOD_NAME" value="preAuth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StateMachineConfigTest.testNewStateMachine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="state-machine" />
       <extension name="coverage">
@@ -74,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaymentServiceImplTest.preAuth" />
         <item itemvalue="JUnit.StateMachineConfigTest.testNewStateMachine" />
       </list>
     </recent_temporary>
