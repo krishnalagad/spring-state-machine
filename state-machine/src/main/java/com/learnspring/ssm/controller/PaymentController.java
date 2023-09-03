@@ -34,10 +34,10 @@ public class PaymentController {
 
             StateMachine<PaymentState, PaymentEvent> authSM = this.paymentService.authorizePayment(savedPayment.getId());
             System.out.println("Result of Auth: " + authSM.getState().getId());
-            result = "Result of Auth: " + authSM.getState().getId();
+            result = String.valueOf(authSM.getState().getId());
         } else {
             result = "Payment failed pre-auth";
         }
-        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("message", result));
+        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of("result", result));
     }
 }

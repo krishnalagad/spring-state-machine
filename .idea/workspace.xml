@@ -123,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PaymentServiceImplTest.testAuth" />
         <item itemvalue="Application.StateMachineApplication" />
+        <item itemvalue="JUnit.PaymentServiceImplTest.testAuth" />
         <item itemvalue="JUnit.PaymentServiceImplTest.preAuth" />
         <item itemvalue="JUnit.StateMachineConfigTest.testNewStateMachine" />
       </list>
