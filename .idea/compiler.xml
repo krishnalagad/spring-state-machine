@@ -13,7 +13,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="17" />
-      <module name="state-machine" target="20" />
+      <module name="state-machine" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
